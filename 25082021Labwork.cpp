@@ -3,6 +3,13 @@
 #include <iostream>
 using namespace std;
 
+void input(int *arr, int size){
+    printf("Enter the elements of the array\n");
+    for(int i = 0; i<size; i++){
+        scanf("%d",&arr[i]);
+    }
+}
+
 void insertionSort(int arr[], int n){
     int i, key, j;
     for (i = 1; i < n; i++){
@@ -32,13 +39,6 @@ void mergeArray(int arr1[], int arr2[], int arr3[], int m, int n){
     }
     while (j < n){
         arr3[k++] = arr2[j++];
-    }
-}
-
-void input(int *arr, int size){
-    printf("Enter the elements of the array\n");
-    for(int i = 0; i<size; i++){
-        scanf("%d",&arr[i]);
     }
 }
 
