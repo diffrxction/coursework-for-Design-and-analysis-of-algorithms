@@ -1,0 +1,48 @@
+Problem definition:
+
+Write a program to concatenate two sorted arrays and display the resultant array. Input two random arrays from the user and sort them individually by deploying any comparison-based sorting technique. 
+
+The program is divided into four modules which are:
+1. Function for getting input from the user.
+2. Function for insertion sort.
+3. Function to merge the two arrays.
+4. Main function.
+
+Algorithms employed:
+
+void input:
+Step 1 -- Run an iterative construct from 0 to (size - 1)
+Step 2 -- Get an input from the user for each iteration.
+Step 3 -- Repeat until construct is exhausted or stop condition is met.
+
+Input algorithm is executed twice for two arrays.
+
+void insertionSort:
+Step 1 -- If it is the first element, it is already sorted. return 1;
+Step 2 -- Pick next element
+Step 3 -- Compare with all elements in the sorted sub-list
+Step 4 -- Shift all the elements in the sorted sub-list that is greater than the 
+         value to be sorted
+Step 5 − Insert the value
+Step 6 − Repeat until list is sorted
+
+Insertion Sort algorithm is executed twice for two arrays.
+
+void mergeArray:
+Step 1 -- Run an iterative construct till the counter is less than the number of elements in either array.
+Step 2 -- Compare elements from both arrays and store the smaller one in the third array and also increase counter in the same step.
+Step 3 -- Repeat until exit condition is met.
+Step 4 -- Check for remaining elements in either array with two seperate loops, add them and increase the counter when found.
+Step 5 -- Repeat until loops are exhausted.
+
+Merge function is executed once only .
+
+Main function:
+Step 1 -- Declare and initialize the required variables.
+Step 2 -- Use dynamically allocated memory to ensure space availability for bigger datasets.
+Step 3 -- Execute input function twice followed by insertion sort function twice on the arrays.
+Step 4 -- Call the mergeArray function.
+Step 5 -- Print final array.
+Step 6 -- Delete dynamically allocated memory locations to avoid low heap memory space in system.
+
+Time complexity: O(m+n)
